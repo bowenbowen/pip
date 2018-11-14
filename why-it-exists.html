@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pip | why it exists</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bmg7yhd.css">
+    <style>
+        * {
+            font-family: futura-pt, sans-serif;
+            font-style: normal;
+        }
+
+        header {
+            box-sizing: border-box;
+            width: 100vw;
+            padding: 0 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 2em;
+            list-style: none;
+        }
+
+        .title {
+            font-size: 3em;
+            font-weight: 700;
+            color: #F05A28;
+        }
+
+        .nav {
+            color: #FAAF3F;
+        }
+
+        .nav:hover {
+            color: #F05A28;
+        }
+        .current {
+            color: #4A4A4A;
+        }
+
+        main {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            font-weight: 400;
+            color: #4A4A4A;
+            width: 50%;
+            margin-bottom: 2em;
+        }
+
+        main img {
+            margin: 2em 0;
+            width: 100%;
+        }
+
+        .important {
+            font-weight: 700;
+            color: #7E3F97;
+            font-size: 3em;
+        }
+
+        .quote {
+            color: #7E3F97;
+        }
+
+        button {
+            position: fixed;
+            font-size: 1em;
+            bottom: 3em;
+            right: 3em;
+            border: none;
+            display: none;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="title">WHY PIP EXISTS</div>
+        <ul>
+            <a class="nav" id="home" href="index.html">
+                <li>home</li>
+            </a>
+            <a class="nav current" href="why-it-exists.html">
+                <li>why pip exists</li>
+            </a>
+            <a class="nav" href="how-it-came-into-being.html">
+                <li>how pip came into being</li>
+            </a>
+            <a class="nav" href="how-it-works.html">
+                <li>how pip works</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <p>In response to Unter’s brief, the question I decided to tackle through design is this:</p>
+        <p class='important'>How do you find places by not names, but the environment?</p>
+        <p>Life is easy when you have Google Maps and a specific place to go in mind. However, it might be hard to decide where to go if you only have very vague ideas in mind like</p>
+
+        <p class="quote">“this afternoon I want to sit down and have a chat with my friend for about 2 hours at a place where it’s bright and not too noisy, and it should be close to public transport because I cannot walk too far in the shoes i am wearing today”</p>
+
+        <p>but you are not so familiar with this area.</p>
+
+        <img src="images/conversation.png" alt="conversation">
+
+        <p>A way to search for places by complicated conditions or subtle feelings are missing from the pupolar tools in use today. For example, Google Maps, the navigation app most of the people rely on day-to-day to find places, only support these ways to search:</p>
+
+        <img src="images/google-maps-tips.png" alt="google maps search tips">
+
+        <p>Hence, I decided to make a tool that enable people to find places more accurately through filtering the properties and the feelings of places.</p>
+    </main>
+
+
+    <button id="back-to-top" onclick="scrollToTop()">back to top</button>
+
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+
+</html>

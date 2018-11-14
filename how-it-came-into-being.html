@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pip | how it came into being</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bmg7yhd.css">
+    <style>
+        * {
+            font-family: futura-pt, sans-serif;
+            font-style: normal;
+        }
+
+        header {
+            box-sizing: border-box;
+            width: 100vw;
+            padding: 0 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 2em;
+            list-style: none;
+        }
+
+        .title {
+            font-size: 3em;
+            font-weight: 700;
+            color: #F05A28;
+        }
+
+        .nav {
+            color: #FAAF3F;
+        }
+
+        .nav:hover {
+            color: #F05A28;
+        }
+
+        .current {
+            color: #4A4A4A;
+        }
+
+        main {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            font-weight: 400;
+            color: #4A4A4A;
+            width: 50%;
+            margin-bottom: 2em;
+        }
+
+        main img {
+            margin: 2em 0;
+            width: 100%;
+        }
+
+        .important {
+            font-weight: 700;
+            color: #7E3F97;
+            font-size: 3em;
+        }
+
+        .quote {
+            color: #7E3F97;
+        }
+
+        button {
+            position: fixed;
+            font-size: 1em;
+            bottom: 3em;
+            right: 3em;
+            border: none;
+            display: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="title">HOW PIP CAME INTO BEING</div>
+        <ul>
+            <a class="nav" id="home" href="index.html">
+                <li>home</li>
+            </a>
+            <a class="nav" href="why-it-exists.html">
+                <li>why pip exists</li>
+            </a>
+            <a class="nav current" href="how-it-came-into-being.html">
+                <li>how pip came into being</li>
+            </a>
+            <a class="nav" href="how-it-works.html">
+                <li>how pip works</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <p>Through research, I found out that what really missing is the <span class='quote'>SENSE OF PLACE</span>, which is affected by the people’s factors and the physical environment’s factors.</p>
+        <img src="images/sense-of-place.png" alt="diagram-sense-of-place">
+        <p>Hence, I decided to make an app that could allow users to conveniently access not only information about the physical space, but also the feelings of the space.</p>
+        
+        <p>
+            The concept of pip was inspired by Janpanese Shinto religion’s ancient animism belief—animate and inanimate things have spirits or souls that are worshipped, which have divine personalities and responds to truthful prayers (<a href="https://www.britannica.com/topic/Shinto">reference</a>). Strip away the religious factors, I realise that this could be an interesting model to capture the sense of place.
+        </p>
+        
+    </main>
+
+    <button id="back-to-top" onclick="scrollToTop()">back to top</button>
+
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+
+
+
+</html>

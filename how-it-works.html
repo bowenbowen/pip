@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pip | how it works</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bmg7yhd.css">
+    <style>
+        * {
+            font-family: futura-pt, sans-serif;
+            font-style: normal;
+        }
+
+        header {
+            box-sizing: border-box;
+            width: 100vw;
+            padding: 0 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 2em;
+            list-style: none;
+        }
+
+        .title {
+            font-size: 3em;
+            font-weight: 700;
+            color: #F05A28;
+        }
+        
+        h3 {
+            color: #F05A28;
+            font-size: 2em;
+        }
+
+        .nav {
+            color: #FAAF3F;
+        }
+
+        .nav:hover {
+            color: #F05A28;
+        }
+        .current {
+            color: #4A4A4A;
+        }
+
+        main {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            font-weight: 400;
+            color: #4A4A4A;
+            width: 50%;
+            margin-bottom: 2em;
+        }
+
+        main img {
+            margin: 2em 0;
+            width: 100%;
+        }
+        .sub-content {
+            margin-left: 3em;
+        }
+
+        .important {
+            font-weight: 700;
+            color: #7E3F97;
+            font-size: 3em;
+        }
+
+        .quote {
+            color: #7E3F97;
+        }
+
+        button {
+            position: fixed;
+            font-size: 1em;
+            bottom: 3em;
+            right: 3em;
+            border: none;
+            display: none;
+        }
+        .section-title {
+            position: sticky;
+            top:0;
+        }
+        .pip-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .long-img-wrapper {
+/*            float: left;*/
+            width: 375px;
+            height: 667px;
+            overflow-y: scroll;
+            text-align: center;
+            margin-left: 25%;
+            display: inline-block;
+            vertical-align:top;
+            border: solid 1px #E0E0E0;
+        }
+        .long-img-wrapper img {
+            margin:0;
+        }
+        .highlight {
+            color: #F05A28;
+            font-weight: 700;
+        }
+        
+        
+        @media only screen and (max-width : 320px) {
+            main {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+        <header>
+        <div class="title">HOW PIP WORKS</div>
+        <ul>
+            <a class="nav" id="home" href="index.html">
+                <li>home</li>
+            </a>
+            <a class="nav" href="why-it-exists.html">
+                <li>why pip exists</li>
+            </a>
+            <a class="nav" href="how-it-came-into-being.html">
+                <li>how pip came into being</li>
+            </a>
+            <a class="nav current" href="how-it-works.html">
+                <li>how pip works</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+       <p>Pip aims to encourage users to engage more emotionally with the physical space, and the results generated from the interactions can hence help the users find places more accurately by not only the attributes and properties of places, but also the sense of place.</p>
+        <p>
+            In order to build the reliable data source, conceptually, the app will first gather information about places from different sources of the internet (Google Maps, Tripadvisor etc.) to generate the basic details about a place. And then the users are allowed to interact with the places to further enrich the information. It should also utilise artificial intelligence to be able to better understand users’ instructions, so that it can respond accurately.</p>
+<!--            <img style="width:50%;"src="images/pip-logo-horizontal.svg" alt="logo">-->
+            
+            <section>
+                <h2 class="important section-title">Feature 1 — personalisation</h2>
+                <div class="sub-content">
+                    <p>As mentioned in the findings, the sense of place is affected by the person interacts with the place. Hence, the app tries to get a comprehensive image of the user, and recommend different options in different situations.</p>
+                    <img src="images/feature-personalization.png" alt=""feature personalisaion>
+                </div>
+            </section>
+            
+            <section>
+                <h2 class="important section-title">Feature 2 — chatbots &amp; personification of places</h2>
+                <div class="sub-content">
+                   <h3>pip</h3>
+                    <p>A <span class="highlight">pip</span> is a character with human personalities, which represents a place in physical space. The sense of place could be reflected from its personality.</p>
+                    <img style="float:right;width: 100px;" src="images/pip-image.svg" alt="pip image">
+                    <p>You can chat with these little characters and easily access relevant information of the place, or even maintain a friendship with it so that it knows you more and hence give you more personalised information.</p>
+                    <p>You are also encouraged to tell it your interaction and memories of the place. The pip will remember.</p>
+                    <img src="images/feature-chatbot.png" alt="feature chatbot">
+                    <p>The more information about a place is know, the more distinct characteristics a pip will gain. Its image might also change.</p>
+                    <div class="pip-wrapper">
+                        <img style="width: 50px;" src="images/pip-1.svg" alt="pip variation 1">
+                        <img style="width: 50px;" src="images/pip-2.svg" alt="pip variation 2">
+                        <img style="width: 50px;" src="images/pip-4.svg" alt="pip variation 4">
+                        <img style="width: 60px;" src="images/pip-5.svg" alt="pip variation 5">
+                        <img style="width: 50px;" src="images/pip-6.svg" alt="pip variation 6">
+                        <img style="width: 50px;" src="images/pip-7.svg" alt="pip variation 7">
+                        <img style="width: 50px;" src="images/pip-8.svg" alt="pip variation 8">
+                        <img style="width: 50px;" src="images/pip-9.svg" alt="pip variation 9">
+                        <img style="width: 50px;" src="images/pip-10.svg" alt="pip variation 10">
+                        <img style="width: 40px;" src="images/pip-11.svg" alt="pip variation 11">
+                    </div>
+                </div>
+            
+            
+            
+               <h3>create new pips</h3>
+                <p style="display: inline-block;">In the case some places might not be marked as a pip, either bacause it just appears or it’s too small too be marked as a place by other platforms (such as a bench on the street), you can create a new pip. By providing informtation of the place, it’f like teaching a new-born baby about its identity, which is potentially a good way to encourage users to contribute information actively.</p>
+                <div class="long-img-wrapper">
+                    <img src="images/feature-create.png" alt="create pip">
+                </div>
+                
+                <h3>miles</h3>
+                 <p><span class="highlight">Miles</span> is your helper who is always there and you can chat with. If you find something is hard to search for through the search feature, or you just wan to chitchat, talk to him and he’d recommend you some good place to go to.</p>
+                 <img style="width: 100px;" src="images/miles.svg" alt="pip image">
+                 <div class="long-img-wrapper">
+                    <img src="images/feature-chat-miles.png" alt="chat with miles">
+                </div>
+            </section>
+            
+            <section>
+                <h2 class="important section-title">Feature 3 — Advanced Search</h2>
+                <div class="sub-content">
+                    <p>The app provide a lot of filters for users to play around with in order to get more personalised results.</p>
+                    <div class="long-img-wrapper">
+                    <img src="images/search.png" alt="chat with miles">
+                </div>
+                </div>
+            </section>            
+
+        
+    </main>
+    
+        <button id="back-to-top" onclick="scrollToTop()">back to top</button>
+
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+
+
+
+</html>
